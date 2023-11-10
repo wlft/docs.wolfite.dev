@@ -1,0 +1,120 @@
+site_name: Wolfite Docs
+
+markdown_extensions:
+    - pymdownx.highlight:
+        anchor_linenums: true
+        line_spans: __span
+        pygments_lang_class: true
+        auto_title: false
+        linenums: true
+        anchor_linenums: true
+    - pymdownx.keys
+    - pymdownx.emoji:
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
+        # options:
+        #   custom_icons:
+        #     - overrides/.icons
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - abbr
+    - md_in_html
+    - attr_list
+    - pymdownx.snippets
+
+
+nav:
+  - index.md
+  - WXRoblox:
+    - wxroblox/index.md
+
+
+
+extra:
+  homepage: /
+  status:
+    new: Recently added
+    deprecated: Deprecate
+  # social:
+  #   - icon: fontawesome/brands/github
+  #     link: https://destrix.app/t/github
+  #     name: Destrix on Github
+  #   - icon: fontawesome/brands/twitter
+  #     link: https://destrix.app/t/twitter
+  #     name: Destrix on Twitter
+  #   - icon: fontawesome/brands/discord
+  #     link: https://destrix.app/t/discord
+  #     name: Destrix on Discord
+  #   - icon: fontawesome/brands/trello
+  #     link: https://destrix.app/t/trello
+  #     name: Destrix on Trello
+  #   - icon: fontawesome/brands/youtube
+  #     link: https://destrix.app/t/youtube
+  #     name: Destrix on YouTube
+  #   - icon: fontaweseome/brands/twitter
+  #     link: https://destrix.app/t/patreon
+  #     name: Wolfite on Patreon
+  alternate:
+    - name: English
+      link: https://docs.destrix.app/
+      lang: en
+    # - name: Español
+    #   link: https://es.docs.destrix.app/?from=lang_en
+    #   lang: es
+    # - name: 日本語
+    #   link: https://jp.docs.destrix.app/?from=lang_en
+    #   lang: jp
+copyright: >
+  Copyright &copy; 2022 - 2024 <a href="//wolfite.dev?to=twitter">@Wolfite_</a>
+#<br><a href="#__consent">Change cookie settings</a>
+
+theme:
+  name: material
+  logo: https://cdn.wolfite.net/branding/wolfite/wolfite.png
+  favicon: https://cdn.wolfite.net/branding/wolfite/wolfite.png
+  language: en
+  # custom_dir: overrides
+
+  
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.action.view
+    - content.tooltips
+    - content.code.annotate
+    - navigation.footer
+    - content.tabs.link
+    - search.suggest
+    - search.share
+    - announce.dismiss
+    - toc.follow
+    - navigation.indexes
+    # - toc.integrate
+  # icon:
+  #   repo: destrix/logo
+  #   annotation: material/plus-circle
+
+  
+  
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      # scheme: default
+      primary: teal
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
