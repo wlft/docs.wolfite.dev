@@ -1,0 +1,54 @@
+site_name: WXRoblox
+site_url: https://docs.wolfite.dev/wxroblox
+
+extra_css:
+    - stylesheets/extra.css
+
+theme:
+  name: material
+  logo: https://cdn.wolfite.net/branding/wxroblox/v1/wxroblox-multicolor-icon.png
+  favicon: https://cdn.wolfite.net/branding/wxroblox/v1/wxroblox-multicolor-icon.png
+  language: en
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.action.view
+    - content.tooltips
+    - content.code.annotate
+    - navigation.footer
+    - content.tabs.link
+    - search.suggest
+    - search.share
+    - announce.dismiss
+    - toc.follow
+    - navigation.indexes
+  
+  palette:
+
+    - media: "(prefers-color-scheme)"
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to system preference

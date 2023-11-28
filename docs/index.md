@@ -1,3 +1,3 @@
-# Wolfite
+# Wolfite Docs
 
-This documentation contains multiple projects with less documentation.
+This website contains multiple projects.
