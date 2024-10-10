@@ -1,4 +1,4 @@
-site_name: Wolfite Docs
+site_name: Wolfite Documentation
 
 markdown_extensions:
     - pymdownx.highlight:
@@ -25,12 +25,14 @@ markdown_extensions:
 
 
 nav:
-  - index.md
-  - WXRoblox:
-    - wxroblox
-  - Hydrogen:
-    - hydrogen
+  - Home: index.md
+  # - WXRoblox:
+  #   - wxroblox
+  # - Hydrogen:
+  #   - hydrogen
 
+extra_css:
+  - stylesheets/extra.css
 
 
 extra:
@@ -71,15 +73,15 @@ copyright: >
   Copyright &copy; 2023 - 2024 <a href="//wolfite.dev?to=twitter">@Wolfite_</a>
 #<br><a href="#__consent">Change cookie settings</a>
 
-plugins:
-  - projects:
-      projects_dir: projects
-      hoisting: false
+# plugins:
+#   - projects:
+#       projects_dir: projects
+#       hoisting: false
 
 theme:
   name: material
-  logo: https://cdn.wolfite.net/branding/wolfite/wolfite.png
-  favicon: https://cdn.wolfite.net/branding/wolfite/wolfite.png
+  logo: https://wwstatic.com/ss1/branding/wolfite/v3/clean/svg/WolfiteW.svg
+  favicon: https://wwstatic.com/ss1/branding/wolfite/v3/clean/svg/WolfiteW.svg
   language: en
   # custom_dir: overrides
 
@@ -108,10 +110,18 @@ theme:
   
   
   palette:
+
+    - media: "(prefers-color-scheme)"
+      primary: custom
+      accent: blue
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      # scheme: default
-      primary: teal
+      scheme: default
+      primary: custom
       accent: blue
       toggle:
         icon: material/weather-sunny
@@ -119,9 +129,9 @@ theme:
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: teal
+      scheme: void
+      primary: custom
       accent: blue
       toggle:
         icon: material/weather-night
-        name: Switch to light mode
+        name: Switch to system preference
